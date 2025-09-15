@@ -1,14 +1,55 @@
 # CarfunctionOOP-JAVA-DEVELOPER
-Object-Oriented Programming (OOP) in Java is a programming paradigm that organizes code into objects, which are instances of classes. It emphasizes four key principles:
+🚗 Vehicle Inheritance Project
+📌 Project Description
 
-Encapsulation: Bundling data (fields) and methods (functions) together within a class and restricting access using access modifiers (e.g., private, protected, public).
+This Java project demonstrates object-oriented programming (OOP) concepts such as inheritance, constructors, method overriding, and the use of the super keyword through a simple vehicle hierarchy.
 
-Inheritance: Allowing a class (subclass) to inherit properties and behaviors from another class (superclass), promoting code reuse.
+The project models different types of vehicles, showcasing how subclasses can extend and customize the behavior of their superclass.
 
-Polymorphism: Enabling a single interface or method to work in different ways, such as method overloading or overriding.
+🛠️ Classes Overview
 
-Abstraction: Hiding implementation details and exposing only the essential features via abstract classes or interfaces.
+Vehicle (Superclass)
 
-OOP in Java simplifies complex problems, enhances code modularity, and improves maintainability and reusability.
+Attributes: make, model, color, speed
 
-IN THIS REPOSITORY I WORKED OVER 4 JAVA FILES TO SHOWCASE HOW OOP WORKS IN JAVA BY USING UNDERSTANDABLE TOPICS AND REAL LIFE EXAMPLE ABOUT CREATING AN CAR OBJECT AND DEFINE WHAT IT NEEDS TO BECOME REAL VEHICLE IN REAL LIFE
+Methods: accelerate(), breaking(), turn(), adjustSeat()
+
+Provides the core functionality for all vehicles.
+
+Car (Subclass of Vehicle)
+
+Adds the attribute seatPosition and the method adjustSeat(int adjustment)
+
+Uses a parameterized constructor that explicitly calls super() to initialize Vehicle attributes.
+
+SportCar (Subclass of Car)
+
+Adds the attribute turboBoost
+
+Includes the method turbomode() to activate turbo acceleration by enhancing the speed.
+
+Main
+
+Demonstrates object creation and method usage.
+
+Creates a Car and a SportCar and shows how inherited and subclass-specific methods are used.
+
+🚀 Key Concepts Practiced
+
+Inheritance → Car extends Vehicle, SportCar extends Car
+
+Constructors & super() → Passing parameters from subclass to superclass
+
+Encapsulation of attributes and behavior
+
+Method overriding and extension (e.g., turbomode() builds on accelerate())
+
+▶️ Example Usage
+
+Create a Car or SportCar object
+
+Call methods like accelerate(), breaking(), and turn()
+
+Adjust seat position with adjustSeat()
+
+Enable turbo mode for a sport car
